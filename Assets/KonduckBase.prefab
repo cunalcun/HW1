@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1837826300657637250
+--- !u!1 &4011393437698859542
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,51 +8,50 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8575747905025622269}
-  - component: {fileID: 1865334651682440898}
-  - component: {fileID: 8810536752985975394}
-  - component: {fileID: 3230089142752846840}
-  - component: {fileID: 8806587291025010405}
-  - component: {fileID: 7874462134948259108}
-  - component: {fileID: 1039777449389894650}
-  - component: {fileID: 4715427733956971774}
-  m_Layer: 7
-  m_Name: EnemyChicken
+  - component: {fileID: 1695785202545371473}
+  - component: {fileID: 6411534954051936009}
+  - component: {fileID: 8864047695926201466}
+  - component: {fileID: 7058823798342032824}
+  - component: {fileID: 630588500897247064}
+  - component: {fileID: 5008046590766964482}
+  - component: {fileID: 2839661609383456106}
+  m_Layer: 11
+  m_Name: KonduckBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8575747905025622269
+--- !u!4 &1695785202545371473
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1837826300657637250}
+  m_GameObject: {fileID: 4011393437698859542}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 210.07329, y: 50.005573, z: 215.43297}
+  m_LocalPosition: {x: 234.65012, y: 50.012783, z: 195.32315}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1865334651682440898
+--- !u!33 &6411534954051936009
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1837826300657637250}
-  m_Mesh: {fileID: 4300000, guid: 7bad4e7c89be10a4083226108ffcab9d, type: 3}
---- !u!23 &8810536752985975394
+  m_GameObject: {fileID: 4011393437698859542}
+  m_Mesh: {fileID: 4300000, guid: 82d0b33fd2ad44744aa557711150e99e, type: 3}
+--- !u!23 &8864047695926201466
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1837826300657637250}
+  m_GameObject: {fileID: 4011393437698859542}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -90,16 +89,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!95 &3230089142752846840
+--- !u!95 &7058823798342032824
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1837826300657637250}
+  m_GameObject: {fileID: 4011393437698859542}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 7bad4e7c89be10a4083226108ffcab9d, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 82d0b33fd2ad44744aa557711150e99e, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -112,39 +111,13 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8806587291025010405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1837826300657637250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f956b9c4dab89ee4d937b4b6265cc14f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  normalMoveSpeed: 13
-  angryMoveSpeed: 18
-  chaseMoveSpeed: 10
-  changeDirectionTime: 2
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 1024
-  baseLayer:
-    serializedVersion: 2
-    m_Bits: 2048
-  angryParticlePrefab: {fileID: 4807719791546061606, guid: 43c61d26607cdd64480af34c91c966d7,
-    type: 3}
-  chaseParticlePrefab: {fileID: 7386067086331915559, guid: d9607f7c03de67c4db37222a329d7027,
-    type: 3}
---- !u!54 &7874462134948259108
+--- !u!54 &630588500897247064
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1837826300657637250}
+  m_GameObject: {fileID: 4011393437698859542}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -165,13 +138,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1039777449389894650
+--- !u!65 &5008046590766964482
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1837826300657637250}
+  m_GameObject: {fileID: 4011393437698859542}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -180,24 +153,23 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.47488832, y: 0.71676344, z: 0.6100489}
-  m_Center: {x: 0.000000007450581, y: 0.36196527, z: 0.00050891936}
---- !u!114 &4715427733956971774
+  m_Size: {x: 0.39488983, y: 0.60054964, z: 0.654078}
+  m_Center: {x: 0.000000029802322, y: 0.29665187, z: -0.036257103}
+--- !u!114 &2839661609383456106
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1837826300657637250}
+  m_GameObject: {fileID: 4011393437698859542}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ed5dcb5446789b479ecc15c0d869e01, type: 3}
+  m_Script: {fileID: 11500000, guid: 983ff13475023574da7292b06fde36d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 50
-  deathParticlePrefab: {fileID: 3190265117413745966, guid: 0cf0572f43e223544b6263075498b2f8,
-    type: 3}
+  maxHP: 100
+  baseDamage: 90

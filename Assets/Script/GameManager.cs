@@ -56,6 +56,15 @@ public class GameManager : MonoBehaviour
         Debug.Log($"적 스폰: 남아있는 적 {enemiesRemaining}마리");
     }
 
+    public void BaseDestroyed()
+    {
+        if (!gameOver)
+        {
+            gameOver = true;
+            GameOver();
+        }
+    }
+
     // 게임 패배 처리
     private void GameOver()
     {

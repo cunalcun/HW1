@@ -7,7 +7,6 @@ public class Spawner : MonoBehaviour
     public GameObject enemyPrefab;     
     public float spawnInterval = 5f;  
     public float spawnRange = 10f;
-    public float enemyLifeTime = 20f;
     private float spawnTimer = 0f; 
 
     void Update()
@@ -33,7 +32,5 @@ public class Spawner : MonoBehaviour
 
         GameObject newEnemy = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
         GameManager.instance.EnemySpawned();
-
-        Destroy(newEnemy, enemyLifeTime);
     }
 }

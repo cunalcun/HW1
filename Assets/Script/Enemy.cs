@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour
     }
 
 
-    void Die()
+    public void Die()
     {
         if (deathParticlePrefab != null)
         {
@@ -31,5 +31,10 @@ public class Enemy : MonoBehaviour
         GameManager.instance.EnemyKilled();
         Destroy(gameObject);
     }
+    public void hit()
+    {
+        Destroy(gameObject);
+    }
+
 }
 
